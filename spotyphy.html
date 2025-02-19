@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotyphy</title>
+    <link rel="stylesheet" href="spotyphy.css">
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <div class="spotyphy">
+             <div class="guest-account" id="guest-account">
+                <img src="himanshu1.jpg" alt="img" width="80vw" />
+                <span>Millions of songs</span>
+                <span>Free on Spotyphy</span>
+                <div class="spotyphy-login-guest flexcenter scale" id="spotyphy-login-guest">
+                    Sign up free
+                </div>
+                <div class="spotyphy-login login-margin flexcenter scale" id="spotyphy-login">
+                    Log in
+                </div>
+            </div>
+            <div class="guest-account second-page" id="guest-account-2">
+                <img src="himanshu1.jpg" alt="img" width="80vw" />
+                <span>Uncountable of songs</span>
+                <span>Free on Spotyphy</span>
+
+                <input type="email" class="spotyphy-login-guest scale" id="input-email" placeholder="Your Email">
+
+                <input type="number" class="spotyphy-login flexcenter scale" id="input-number"
+                    placeholder="Enter Phone Number">
+
+
+                <input type="name" class="spotyphy-login flexcenter scale" id="input-name"
+                    placeholder="Enter your good name">
+
+
+                <button onclick="spotyphyLoginCheck()" class="spotyphy-login login-margin flexcenter scale"
+                    id="spotyphy-login-check">Submit</button>
+            </div>
+
+            <!-- first page and second page has been completed.. -->
+            <!-- time to write our main containt page-->
+
+
+            <div class="container flexcenter" id="container">
+                <div class="cont-head flex" id="cont-head">
+                    <div class="ping flex">
+                        <div class="profile flexcenter" id="profile">M</div>
+                        <div class="spotifyUser" id="spotifyUser">XYZ Singh</div>
+                    </div>
+                    <div class="cont-setting" id="cont-setting"><img class="mysettingimage" src="settitng.jpg" alt="no" width="100%"></div>
+                </div>
+                <input class="search" id="search" placeholder="What do you want to listen to">
+                <div class="cont-main flexcenter" id="cont-main">
+                    <div class="songcard" id="songcard1">
+                        <div class="song" id="song1" onclick="playaudio('song1')"></div>
+                        <div class="song" id="song2"></div>
+                    </div>
+                </div>
+                <audio id="myaudio1" class="myaudio" src="jo tu na mila.mp3"></audio>
+                <div class="cont-footer" id="cont-footer"></div>
+
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="spotyphy.js"></script>
+</body>
+
+</html>

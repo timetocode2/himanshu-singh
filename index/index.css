@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+.flexcenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+
+.scale:hover {
+    transform: scale(1.15);
+}
+
+:root {
+    --animated-world: first-anime-in-help 0.3s linear infinite forwards
+}
+
+@keyframes first-anime-in-help {
+    0% {
+        border: blue 4px solid;
+    }
+
+    100% {
+        border: rgb(5, 252, 5) 4px solid;
+    }
+}
+
+.header-head-child1 {
+    height: 50px;
+    font-size: 37px;
+    font-weight: 600;
+    width: 100%;
+    position: fixed;
+    text-align: center;
+}
+
+nav {
+    width: 100%;
+    height: 37px;
+    position: fixed;
+    top: 49px;
+
+    font-weight: 700;
+    
+    padding: 5px;
+    padding-left: 19px;
+}
+
+
+
+div.sub-setting ul,nav ul, div.sub-apps ul {
+    display: grid;
+    grid-template-columns: 26% 26% 26% 26%;
+    list-style: none;
+    text-align: left;
+    width: 100%;
+}
+
+.header-main{
+    position: fixed;
+    top: 86px;
+}
+
+.sub-setting,.sub-apps{
+        width: 100%;
+        height: 37px;
+        position: fixed;
+        top: 86px;
+    
+        font-weight: 700;
+        
+        padding: 5px;
+        padding-left: 19px;
+    }
+
+
+
+
+
+
+
+    .index-control{
+        position: fixed;
+        margin-bottom: 15px;
+        font-size: 2vmax;
+
+    }
+
+    .index-control span{
+        display: inline-block;
+        margin: 2vh 0px;
+        font-size: 3vmax;
+        }
+
+    .setting-control {
+        width: 48vw;
+        line-height: 40px;
+        justify-content: flex-start;
+        top: 17vh;
+        box-shadow: 9px 9px 3px rgba(0, 0, 0, 0.678);
+        z-index: 1000;
+    }
+
+    .apps-control {
+        border: white solid;
+        border-width: 4px 4px 4px 4px;
+        width: 75vw;
+        background: linear-gradient(to top, rgb(241, 147, 179), rgb(245, 107, 153));
+        color: rgba(0, 0, 0, 0.623);
+        line-height: 40px;
+        justify-content: flex-start;
+        top: 25vh;
+        /* visibility: hidden; */
+        box-shadow: 9px 9px 3px rgba(0, 0, 0, 0.678);
+        z-index: 1000;
+    }    
+
+.index-control-closebtn{
+    width: 40vw;
+    font-size: 2.5vmax;
+    height: 50px;
+    background: linear-gradient(to top, rgb(233, 126, 162), rgb(230, 181, 197));
+    box-shadow: 3px 3px 3px rgb(243, 73, 130);
+    color: white;
+    border: 4px white solid;
+    margin: 2vh 0px 4vh 0px;
+    z-index: 1000;
+
+}
+
+.openApp {
+    width: 40vw;
+    font-size: 25px;
+    height: 50px;
+    background: linear-gradient(to top, rgb(233, 126, 162), rgb(230, 181, 197));
+    box-shadow: 3px 3px 3px rgb(243, 73, 130);
+    color: white;
+    border: 4px white solid;
+    margin: 6vh 0px 2vh 0px;
+
+}
+
+.index-control-closebtn:active, .openApp:active {
+    transform: scale(0.95);
+    background-color: white;
+    font-size: 2.4vmax;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+
+
+
+
+
+
+    main {
+    position: relative;
+    top: 87px;
+
+}

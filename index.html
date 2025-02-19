@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="index/index.css">
+    <link rel="stylesheet" href="index/index-color.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-head" id="header-head">
+            <div class="header-head-child1 header-head-child1-theme1" id="header-head-child1">❤ Welcome Dear</div>
+            <nav class="nav theme1">
+                <ul>
+                    <li class="scale" id="home">❤ Home</li>
+                    <li class="scale" id="setting">❤ Setting</li>
+                    <li class="scale" id="apps">❤ Apps</li>
+                    <li class="scale" id="about">❤ About</li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header-main header-main-themes1" id="header-main">
+
+            <!-- <div id="sub-setting" class="sub-setting sub-setting-themes1">
+                <ul id="sub-setting-ul" class="sub-setting-ul">
+                    <li class="scale" id="themes-button" onclick="controler('themes')">Themes</li>
+                    <li class="scale" id="fonts-button" onclick="controler('fonts')">Fonts</li>
+                    <li class="scale" id="fun-button" onclick="controler('langs')">Language</li>
+                    <li class="scale" id="about-button" onclick="controler('login')">Login</li>
+                </ul>
+            </div> -->
+
+            <!-- <div id="sub-apps" class="sub-apps sub-apps-themes1">
+                <ul id="sub-apps-ul" class="sub-apps-ul">
+                    <li class="scale" id="calc-button" onclick="controler('calc')">Calc</li>
+                    <li class="scale" id="tic-button" onclick="controler('tic')">Tic Tac Toe</li>
+                    <li class="scale" id="Xpotyphy-button" onclick="controler('spotyphy')">Spotyphy</li>
+                    <li class="scale" id="pubg-button" onclick="controler('pubg')">Coming..</li>
+                </ul>
+            </div>-->
+        </div>
+
+        <div class="header-footer header-footer-themes1" id="header-footer">
+
+            <!-- here the div.. open hogi setting button per click karte hi 
+ LINE NUMBER 44 SE 106👇👇👇-->
+            <div id="setting-main" class="setting-main flexcenter">
+
+                <div id="themes" class="setting-control flexcenter index-control hidden flexcenter">
+                    <span>Themes</span>
+                    <ul>
+                        <li class="scale" id="calc-themes1">Default</li>
+                        <li class="scale" id="calc-themes2">Dark Theme</li>
+                        <li class="scale" id="calc-themes3">Violet Theme</li>
+                        <li class="scale" id="calc-themes4">Cyan Theme</li>
+                        <li class="scale" id="calc-themes5">Green Theme</li>
+                        <li class="scale" id="calc-themes6">Yellow Theme</li>
+                        <li class="scale" id="calc-themes7">Blue Theme</li>
+                        <li class="scale" id="calc-themes8">Orange Theme</li>
+                    </ul>
+                    <div class="index-control-closebtn" id="index-control-closebtn1">Close</div>
+                </div>
+                <div id="fonts" class="setting-control flexcenter index-control hidden flexcenter">
+                    <span>Fonts</span>
+                    <ul>
+                        <li class="scale" id="calc-fonts1">font type1</li>
+                        <li class="scale" id="calc-fonts2">font type2</li>
+                        <li class="scale" id="calc-fonts3">font type3</li>
+                        <li class="scale" id="calc-fonts4">font type4</li>
+                        <li class="scale" id="calc-fonts5">font type5</li>
+                        <li class="scale" id="calc-fonts6">font type6</li>
+                    </ul>
+                    <div class="index-control-closebtn" id="index-control-closebtn2">Close</div>
+
+                </div>
+                <div id="langs" class="setting-control flexcenter index-control hidden flexcenter">
+                    <span>Language</span>
+                    <ul>
+                        <li class="scale" id="calc-fun1">1. English</li>
+                        <li class="scale" id="calc-fun2">2. Hindi</li>
+                        <li class="scale" id="calc-fun3">3. Sanskrit</li>
+                        <li class="scale" id="calc-fun4">4. loding...</li>
+                        <li class="scale" id="calc-fun5">5. loding...</li>
+                        <li class="scale" id="calc-fun6">6. loding...</li>
+                        <li class="scale" id="calc-fun7">7. loding...</li>
+                        <li class="scale" id="calc-fun8">8. loding...</li>
+                    </ul>
+                    <div class="index-control-closebtn" id="index-control-closebtn3">Close</div>
+                </div>
+                <div id="login" class="setting-control index-control hidden flexcenter">
+                    <span>Login</span>
+                    <div>
+                        <a class="loginnnn" href="login.html"><span class="loginnn"> Click here</span>to log in</a>
+                    </div>
+                    <div class="index-control-closebtn" id="index-control-closebtn4">Close</div>
+                </div>
+            </div>
+            <!-- CHAARO YHA BAND HO RHE HAI 
+LINE 44 SE 106  👆👆👆-->
+
+            <!-- here the div.. open hogi apps button per click karte hi 
+LINE NUMBER 113 SE 173👇👇👇-->
+            <div id="apps-main" class="apps-main flexcenter">
+
+                <div id="calc" class="apps-control index-control hidden flexcenter">
+                    <span>=> Confirmation</span>
+                    are you sure you want ot open calculator application
+                    <button class="openApp" onclick="loadPage('calc')">Yes Open</button>
+                    <div class="index-control-closebtn" id="index-control-closebtn5">No, Close</div>
+                </div>
+
+
+                <div id="tic" class="apps-control index-control hidden flexcenter">
+                    <span>=> Confirmation</span>
+                    are you sure you want ot open Tic Tac Toe application
+                    <button class="openApp" id="openTic" onclick="loadPage('tictactoe')">Yes Open</button>
+                    <div class="index-control-closebtn" id="index-control-closebtn6">No, Close</div>
+                </div>
+
+                <div id="spotyphy" class="apps-control index-control hidden flexcenter">
+                    <span>=> Spotyphy</span>
+                    Good music makes us alive... 😄
+                    <button class="openApp" id="openLords" onclick="loadPage('spotyphy')">Listen</button>
+                    <div class="index-control-closebtn" id="index-control-closebtn7">Another day</div>
+                </div>
+                <div id="pubg" class="apps-control index-control hidden flexcenter">
+                    <span>=> Coming Soon..2</span>
+                    Hey user ! hum aapko update dete rahenge jaise hi koi update laate hai...<a
+                        href="login.html"><button class="openApp" id="openPubg">Next</button></a>
+                    <div class="index-control-closebtn" id="index-control-closebtn8">Close</div>
+                </div>
+            </div>
+            <!-- CHAARO YHA BAND HO RHE HAI 
+LINE 44 SE 173 👆👆👆 -->
+
+        </div>
+    </header>
+
+    <main>
+        hiiii
+    </main>
+    <footer>
+
+    </footer>
+    <script src="index/index.js"></script>
+    <script src="index.js"></script>
+    <script src="calc.js"></script>
+</body>
+
+</html>
