@@ -10,7 +10,7 @@
     --animated-world: first-anime-in-help 0.3s linear infinite forwards;
     --b-color-white: white;
     --head-n-nav-color:#720b0b;
-    --main-bg:linear-gradient(to bottom, black, rgb(255, 126, 179));
+    --main-bg:linear-gradient(to bottom, #e48eb9, #ff7eb3);;
 
 }
 
