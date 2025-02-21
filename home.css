@@ -83,7 +83,7 @@ p {
 }
 
 .photo {
-    background-image: url("Divya.jpg");
+    background-image: url("media/Divya.jpg");
     width: 336px;
     height: 189px;
     background-size: contain;
@@ -172,7 +172,7 @@ font-size: 29px;
 .imgafternote {
     border: 4px white solid;
     box-shadow: 3px 3px 3px black;
-    background: url(himanshu1.jpg);
+    background: url(media/himanshu1.jpg);
     background-size: contain;
     width: 250px;
     height: 250px;

@@ -4,99 +4,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <link rel="stylesheet" href="index/index.css">
-    <link rel="stylesheet" href="index/index-color.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="spotyphy.css">
 </head>
 
-<body>
+<body id="home-body" class="home-body flexcenter">
     <header>
-        <div class="header-head" id="header-head">
-            <div class="header-head-child1 header-head-child1-theme1" id="header-head-child1">❤ Welcome Dear</div>
-            <nav class="nav theme1">
+        <div class="header-head">
+            <div class="flexcenter header1">❤ Welcome Dear</div>
+            <nav class="white-border flexcenter nav1">
                 <ul>
-                    <li class="scale" id="home">❤ Home</li>
-                    <li class="scale" id="setting">❤ Setting</li>
-                    <li class="scale" id="apps">❤ Apps</li>
-                    <li class="scale" id="about">❤ About</li>
+                    <li class="scale" id="home">Home</li>
+                    <li class="scale" id="setting-button">Setting</li>
+                    <li class="scale" id="apps-button">Apps</li>
+                    <a href="about.html">
+                        <li class="scale">About</li>
+                    </a>
                 </ul>
             </nav>
         </div>
 
-        <div class="header-main header-main-themes1" id="header-main">
+        <div class="flexcenter header-main">
 
-            <!-- <div id="sub-setting" class="sub-setting sub-setting-themes1">
-                <ul id="sub-setting-ul" class="sub-setting-ul">
-                    <li class="scale" id="themes-button" onclick="controler('themes')">Themes</li>
-                    <li class="scale" id="fonts-button" onclick="controler('fonts')">Fonts</li>
-                    <li class="scale" id="fun-button" onclick="controler('langs')">Language</li>
-                    <li class="scale" id="about-button" onclick="controler('login')">Login</li>
+            <div id="setting" class="hidden sub-setting-nav">
+                <ul id="sub-setting-nav-ul" class="sub-setting-nav-ul">
+                    <li class="scale" id="themes-button">Themes</li>
+                    <li class="scale" id="fonts-button">Fonts</li>
+                    <li class="scale" id="fun-button"><!--Fun calc--> Language</li>
+                    <li class="scale" id="about-button"><!--About-->Login</li>
                 </ul>
-            </div> -->
+            </div>
 
-            <!-- <div id="sub-apps" class="sub-apps sub-apps-themes1">
-                <ul id="sub-apps-ul" class="sub-apps-ul">
-                    <li class="scale" id="calc-button" onclick="controler('calc')">Calc</li>
-                    <li class="scale" id="tic-button" onclick="controler('tic')">Tic Tac Toe</li>
-                    <li class="scale" id="Xpotyphy-button" onclick="controler('spotyphy')">Spotyphy</li>
-                    <li class="scale" id="pubg-button" onclick="controler('pubg')">Coming..</li>
+            <div id="apps" class="flexcenter hidden sub-apps-nav">
+                <ul id="sub-apps-nav-ul" class="sub-apps-nav-ul">
+                    <li class="scale" id="calc-button">Calc</li>
+                    <li class="scale" id="tic-button">Tic Tac Toe</li>
+                    <li class="scale" id="lords-button">Spotyphy</li>
+                    <li class="scale" id="pubg-button">Coming..</li>
                 </ul>
-            </div>-->
-        </div>
-
-        <div class="header-footer header-footer-themes1" id="header-footer">
-
+            </div>
             <!-- here the div.. open hogi setting button per click karte hi 
  LINE NUMBER 44 SE 106👇👇👇-->
             <div id="setting-main" class="setting-main flexcenter">
 
-                <div id="themes" class="setting-control flexcenter index-control hidden flexcenter">
-                    <span>Themes</span>
+                <div id="themes" class="setting-control hidden flexcenter">
+                    <span class="one">=> Themes</span>
                     <ul>
-                        <li class="scale" id="calc-themes1">Default</li>
-                        <li class="scale" id="calc-themes2">Dark Theme</li>
-                        <li class="scale" id="calc-themes3">Violet Theme</li>
-                        <li class="scale" id="calc-themes4">Cyan Theme</li>
-                        <li class="scale" id="calc-themes5">Green Theme</li>
-                        <li class="scale" id="calc-themes6">Yellow Theme</li>
-                        <li class="scale" id="calc-themes7">Blue Theme</li>
-                        <li class="scale" id="calc-themes8">Orange Theme</li>
+                        <li class="scale" id="lovely-theme">Default</li>
+                        <li class="scale" id="dark-theme">Dark Theme</li>
+                        <li class="scale" id="blue-theme">Blue Theme</li>
+                        <li class="scale" id="green-theme">Green Theme</li>
+                        <li class="scale" id="cyan-theme">Cyan Theme</li>
+                        <li class="scale" id="calc-themes5">Loading...</li>
+                        <li class="scale" id="calc-themes6">Loading...</li>
+                        <li class="scale" id="calc-themes8">Loading...</li>
                     </ul>
-                    <div class="index-control-closebtn" id="index-control-closebtn1">Close</div>
+                    <div class="calc-closebtn-control" id="calc-closebtn-control1">Close</div>
                 </div>
-                <div id="fonts" class="setting-control flexcenter index-control hidden flexcenter">
-                    <span>Fonts</span>
+                <div id="fonts" class="setting-control hidden flexcenter">
+                    <span class="one">Fonts</span>
                     <ul>
-                        <li class="scale" id="calc-fonts1">font type1</li>
-                        <li class="scale" id="calc-fonts2">font type2</li>
-                        <li class="scale" id="calc-fonts3">font type3</li>
-                        <li class="scale" id="calc-fonts4">font type4</li>
-                        <li class="scale" id="calc-fonts5">font type5</li>
-                        <li class="scale" id="calc-fonts6">font type6</li>
+                        <li id="calc-fonts1">font type1</li>
+                        <li id="calc-fonts2">font type2</li>
+                        <li id="calc-fonts3">font type3</li>
+                        <li id="calc-fonts4">font type4</li>
+                        <li id="calc-fonts5">font type5</li>
+                        <li id="calc-fonts6">font type6</li>
                     </ul>
-                    <div class="index-control-closebtn" id="index-control-closebtn2">Close</div>
+                    <div class="calc-closebtn-control" id="calc-closebtn-control2">Close</div>
 
                 </div>
-                <div id="langs" class="setting-control flexcenter index-control hidden flexcenter">
-                    <span>Language</span>
+                <div id="fun" class="setting-control hidden flexcenter">
+                    <span class="one"><!--Fun calc-->Language</span>
                     <ul>
-                        <li class="scale" id="calc-fun1">1. English</li>
-                        <li class="scale" id="calc-fun2">2. Hindi</li>
-                        <li class="scale" id="calc-fun3">3. Sanskrit</li>
-                        <li class="scale" id="calc-fun4">4. loding...</li>
-                        <li class="scale" id="calc-fun5">5. loding...</li>
-                        <li class="scale" id="calc-fun6">6. loding...</li>
-                        <li class="scale" id="calc-fun7">7. loding...</li>
-                        <li class="scale" id="calc-fun8">8. loding...</li>
+                        <li id="calc-fun1">1. loding...</li>
+                        <li id="calc-fun2">2. loding...</li>
+                        <li id="calc-fun3">3. loding...</li>
+                        <li id="calc-fun4">4. loding...</li>
+                        <li id="calc-fun5">5. loding...</li>
+                        <li id="calc-fun6">6. loding...</li>
+                        <li id="calc-fun7">7. loding...</li>
+                        <li id="calc-fun8">8. loding...</li>
                     </ul>
-                    <div class="index-control-closebtn" id="index-control-closebtn3">Close</div>
+                    <div class="calc-closebtn-control" id="calc-closebtn-control3">Close</div>
                 </div>
-                <div id="login" class="setting-control index-control hidden flexcenter">
-                    <span>Login</span>
-                    <div>
-                        <a class="loginnnn" href="login.html"><span class="loginnn"> Click here</span>to log in</a>
+
+                <div id="about" class="setting-control hidden flexcenter">
+                    <span class="one"><!--About-->Login</span>
+                    <!-- <ul>
+            <li id="calc-about1">1. coming...</li>
+            <li id="calc-about2">2. coming...</li>
+            <li id="calc-about3">3. coming...</li>
+            <li id="calc-about4">4. coming...</li>
+            <li id="calc-about5">5. coming...</li>
+            <li id="calc-about6">6. coming...</li>
+            <li id="calc-about7">7. coming...</li>
+            <li id="calc-about8">8. coming...</li>
+            <li id="calc-about9">9. coming...</li>
+            <li id="calc-about10">10. coming...</li>
+        </ul> -->
+                    <div><a class="loginnnn" href="login.html"><span class="loginnn"> Click here</span>to log in</a>
                     </div>
-                    <div class="index-control-closebtn" id="index-control-closebtn4">Close</div>
+                    <div class="calc-closebtn-control" id="calc-closebtn-control4">Close</div>
                 </div>
             </div>
             <!-- CHAARO YHA BAND HO RHE HAI 
@@ -106,49 +117,173 @@ LINE 44 SE 106  👆👆👆-->
 LINE NUMBER 113 SE 173👇👇👇-->
             <div id="apps-main" class="apps-main flexcenter">
 
-                <div id="calc" class="apps-control index-control hidden flexcenter">
-                    <span>=> Confirmation</span>
+                <div id="calc" class="apps-control hidden flexcenter">
+                    <span class="one">=> Confirmation</span>
                     are you sure you want ot open calculator application
-                    <button class="openApp" onclick="loadPage('calc')">Yes Open</button>
-                    <div class="index-control-closebtn" id="index-control-closebtn5">No, Close</div>
+                    <button id="loadCalc" class="openApp">Yes Open</button>
+                    <div class="calc-closebtn-control" id="calc-closebtn-control5">No, Close</div>
                 </div>
 
 
-                <div id="tic" class="apps-control index-control hidden flexcenter">
-                    <span>=> Confirmation</span>
-                    are you sure you want ot open Tic Tac Toe application
-                    <button class="openApp" id="openTic" onclick="loadPage('tictactoe')">Yes Open</button>
-                    <div class="index-control-closebtn" id="index-control-closebtn6">No, Close</div>
+                <div id="tic" class="apps-control hidden flexcenter">
+                    <span class="one">=> Confirmation</span>
+                    Are you sure you want ot open Tic Tac Toe application
+                    <a href="tictactoe.html"><button class="openApp" id="openTic">Yes Open</button></a>
+                    <div class="calc-closebtn-control" id="calc-closebtn-control6">No, Close</div>
                 </div>
 
-                <div id="spotyphy" class="apps-control index-control hidden flexcenter">
-                    <span>=> Spotyphy</span>
-                    Good music makes us alive... 😄
-                    <button class="openApp" id="openLords" onclick="loadPage('spotyphy')">Listen</button>
-                    <div class="index-control-closebtn" id="index-control-closebtn7">Another day</div>
+                <div id="lords" class="apps-control hidden flexcenter">
+                    <span class="one">=> Spotyphy</span>
+                    Listning Good music heels our Soul🥰
+                    <a href="spotyphy.html"><button class="openApp" id="openLords">Play...</button></a>
+                    <div class="calc-closebtn-control" id="calc-closebtn-control7">Close</div>
                 </div>
-                <div id="pubg" class="apps-control index-control hidden flexcenter">
-                    <span>=> Coming Soon..2</span>
+                <div id="pubg" class="apps-control hidden flexcenter">
+                    <span class="one">=> Coming Soon..2</span>
                     Hey user ! hum aapko update dete rahenge jaise hi koi update laate hai...<a
                         href="login.html"><button class="openApp" id="openPubg">Next</button></a>
-                    <div class="index-control-closebtn" id="index-control-closebtn8">Close</div>
+                    <div class="calc-closebtn-control" id="calc-closebtn-control8">Close</div>
                 </div>
             </div>
             <!-- CHAARO YHA BAND HO RHE HAI 
-LINE 44 SE 173 👆👆👆 -->
-
+            LINE 44 SE 173 👆👆👆 -->
         </div>
     </header>
-
     <main>
-        hiiii
-    </main>
-    <footer>
+        <div id="main" class="home main">
+            <div class="flexcenter calc-main">
+                <div class="nouse">
+                    <div id="main-home-id" class="flexcenter main-home-id white-border">
 
-    </footer>
-    <script src="index/index.js"></script>
-    <script src="index.js"></script>
-    <script src="calc.js"></script>
+
+
+                        <div>
+                            <h1 class="first-text" id="first-text">Dear&nbsp;&nbsp;<span id="id1"> Your Name</span>
+                                <span>
+                                    <span class="break">Welcome &nbsp; to </span>
+                                    <span class="break">My web</span>
+                                </span>
+                            </h1>
+                        </div>
+
+
+
+                        <div class="dialog">
+                            <div>
+                                <p id="welcome1" class="welcome">Let me take you to a place</p>
+                                <p id="welcome2" class="welcome">Where dreams meet design ❤</p>
+                            </div><!-- <hr> -->
+                            <div id="photo-frame" class="flexcenter">
+                                <div class="photo"></div>
+                            </div>
+                        </div>
+
+                        <div id="mymedia">
+                            <div id="prev" class="flexcenter scale button">Pre...</div>
+                            <div id="next" class="flexcenter scale button">Next</div>
+                        </div>
+                        <div class="bigtext flexcenter ">
+                            <h1 class="noteforyou flexcenter">A Little Note for You</h1>
+                            <p>
+                                Sometimes, life gives us surprises in the most unexpected ways. Meeting you feels like
+                                one
+                                of those
+                                rare gifts that make everything brighter. Whether it's the way you laugh, the way you
+                                see
+                                the world,
+                                or the way you make even the simplest moments feel magical, it all inspires me. They say
+                                some people
+                                cross our paths for a reason, and I truly believe you are one of them.
+                            </p>
+                            <p>
+                                Friendship is where it all begins, and it's amazing how a simple bond can transform into
+                                something
+                                so meaningful. I've always admired the way you treat others with kindness and how your
+                                presence
+                                lights up any room. You might not even realize it, but you have this ability to make
+                                people
+                                feel
+                                special just by being yourself.
+                            </p>
+
+                            <p>
+                                If I were to write about everything I admire about you, this page might not be enough!
+                                But
+                                here's
+                                the thing—life is not just about grand moments or big words. It's also about those
+                                little
+                                things:
+                                the small gestures, the smiles that linger, and the conversations that stay with us long
+                                after
+                                they're over. And with you, every moment feels like a memory worth cherishing.
+                            </p>
+                            <p>
+                                To be honest, I sometimes wonder if words are enough to express what I feel, but then
+                                again,
+                                words
+                                are all I have. I wanted to take this chance to tell you how much your presence means to
+                                me.
+                                Whether
+                                we're laughing over silly jokes, talking about random things, or just sitting in
+                                silence, it
+                                all
+                                feels special because it's with you.
+                            </p>
+                            <p>
+                                At the end of the day, all I truly wish for is your happiness. Whether you're chasing
+                                your
+                                dreams,
+                                overcoming challenges, or just enjoying life's little moments, I hope you know there
+                                will
+                                always be
+                                someone cheering for you. Because you're not just a friend, you're someone who inspires
+                                me
+                                to be
+                                better, to see the beauty in everything, and to believe in the power of connection.
+                            </p>
+                            <p>
+                                So, here's to many more shared laughs, unforgettable moments, and beautiful days ahead.
+                                Life
+                                has so
+                                much to offer, and I feel lucky to share even a small part of it with you. Thank you for
+                                being you,
+                                for being someone who makes life a little more meaningful.
+                            </p>
+                        </div>
+                        <div class="afternote p flexcenter" style="text-align: center; font-weight: bold;">You’re truly
+                            special, and
+                            I hope you never forget that.🥰</div>
+
+
+
+                        <div class="afternote flexcenter">Hiihihi Kaisa Laga Mera Majak.. <br> I was just kidding. 😁
+                        </div>
+                        <div class="imgafternote"></div>
+                    </div>
+                </div>
+                <div class="aftrerpic" id="afterpic"></div>
+
+            </div>
+        </div>
+
+
+
+
+    </main>
+
+
+    <div class="helpcircle" id="helpcircle"></div>
+    <div id="helpbox" class="helpbox" style="overflow: scroll;">
+    </div>
+
+
+
+
+
+    <script src="all.js"></script>
+    <script src="home.js"></script>
+    <script src="setting.js"></script>
+    <script src="spotyphy.js"></script>
 </body>
 
 </html>

@@ -4,24 +4,8 @@
     user-select: none;
 }
 
-body {
-    width: 100%;
-background: #000;
-color: white;
-}
-.spotyphy{
-    width: 100%;
-}
-
-.scale:active {
-    transform: scale(1.2);
-
-}
-
-:root {
-    --color-white: white;
-    --color-black: black;
-    --border: white;
+header,main,footer {
+    background-color: #000;
 }
 
 .flexcenter {
@@ -30,7 +14,43 @@ color: white;
     align-items: center;
     flex-direction: column;
 }
-.flex{
+
+
+body {
+    background-color: #000;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    height: 00vh;
+}
+
+.flexcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.spotyphy {
+    width: 100%;
+    color: white;
+    background: #000;
+    width: 100%;
+    z-index: 1;
+}
+
+
+:root {
+    --color-white: white;
+    --color-black: black;
+    --border: white;
+}
+
+.aligncenter {
+    align-items: center;
+}
+
+.flex {
     display: flex;
 
 }
@@ -105,7 +125,7 @@ color: white;
 
 
 
-/* page 2 page 2 page 2  */
+
 
 #guest-account-2 {
     visibility: hidden;
@@ -142,18 +162,19 @@ input.spotyphy-login {
     background-color: rgb(71, 71, 71);
 }
 
-.cont-head{
-width:  100%;
-position: fixed;
-top: 0;
-
+.cont-head {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: #000;
+    z-index: 1;
 }
 
-.ping{
-    /* border: rgb(9, 255, 0) 3px solid;     */
-align-items: center;
+.ping {
+    align-items: center;
 }
-.profile{
+
+.profile {
     background-color: rgb(189, 55, 7);
     color: black;
     border-radius: 40px;
@@ -164,12 +185,13 @@ align-items: center;
     margin: 0px 15px;
 }
 
-.spotifyUser{
-    font-size: 30px;
+.spotifyUser {
+    font-size: 25px;
     font-weight: 600;
 
 }
-.cont-setting{
+
+.cont-setting {
     border-radius: 40px;
     width: 43px;
     height: 43px;
@@ -178,61 +200,244 @@ align-items: center;
     right: 15px;
 
 }
-.mysettingimage{
-    animation: rotate360  3s linear  infinite ;
+
+.mysettingimage {
+    animation: rotate360 3s linear infinite;
     width: 100%;
     height: 100%;
     border-radius: 100px;
 }
 
 @keyframes rotate360 {
-    from { 
-        transform:rotate(0deg);
+    from {
+        transform: rotate(0deg);
     }
+
     to {
-         transform:rotate(360deg);
-        }
-   
+        transform: rotate(360deg);
+    }
+
 }
 
-.search{
-    width:93%;
+.search {
+    width: 93%;
     height: 40px;
     background-color: white;
     color: rgba(19, 17, 17, 0.836);
     position: fixed;
-    top :55px;
+    top: 55px;
     border-radius: 5px;
     font-size: 20px;
     padding: 1px 15px;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
 }
-.cont-main{
+
+.cont-main {
     position: relative;
     top: 118px;
     width: 100%;
+    z-index: 0;
 }
-.songcard{
-    
+
+.songcard {
+
     width: 95%;
-    height: 160px;
+    height: 120px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 
-.song{
-    border:rgb(115, 255, 0) solid 2px;
-width: 48%;
-height: 100%;
-
+.song {
+    border: rgb(115, 255, 0) solid 2px;
+    width: 48%;
+    height: 100%;
+    font-size: 28px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
 }
-#song1{
-    background: url("jo\ tu\ na\ mila\ thumbnail.jpg");
+
+.song:active {
+    transform: rotateY(180deg) rotateX(360deg);
+    transition: 1s;
+}
+
+#song1 {
+    background: url("media/jo\ tu\ na\ mila\ thumbnail.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 150%;
+    background-position: center;
+    background-size: cover;
+
+
+}
+
+#song2 {
+    background: url("media/tum\ hi\ ho\ thumbnail.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#song3 {
+    background: url("media/teri\ ore\ thumbnail.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#song4 {
+    background: url("media/himanshu1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.container {
+    display: none;
+}
+
+.cont-footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+
+}
+
+.musicplay {
+    background: rgba(255, 255, 255, 0.253);
+    height: 70px;
+    width: 97%;
+    border-radius: 8px;
+    align-items: center;
+    backdrop-filter: blur(8px);
+}
+
+.song-thumb {
+    border-radius: 8px;
+    width: 80px;
+    height: 45px;
+    border: rgb(115, 255, 0) solid 2px;
+    margin: 0 10px;
+    background-repeat: no-repeat;
     background-position: center;
 
 }
 
-.container{
+.cont-menu {
+    backdrop-filter: blur(4px);
+
+    background: rgba(255, 255, 255, 0.719);
+    height: 60px;
+    width: 100%;
+    margin-top: 10px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#volumeBar {
+    width: 80px;
+}
+
+#seekBar {
+    width: 47vw;
+
+}
+
+#playPauseBtn {
+    border-radius: 8px;
+    width: 80px;
+    height: 27px;
+}
+
+.timeout {
+    margin-right: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px white solid;
+    border-radius: 8px;
+    width: 46px;
+    height: 23px;
+}
+
+#duration {
+    margin-left: 5px;
+}
+
+.lyrics {
+    width: 80px;
+    height: 27px;
+
+    margin: 0 8px;
+    border-radius: 8px;
+    border: white 1px solid;
+}
+
+.lyrics:active {
+    transform: scale(0.95);
+    background-color: rgba(211, 214, 211, 0.363);
+
+}
+
+
+.lyricsheader {
+    border-radius: 5px;
+    border-bottom: 4px green solid;
+    width: 100%;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.795);
+}
+
+.lyricsdivclose {
+    border-radius: 5px;
+    width: 35%;
+    height: 100%;
+    background-color: orangered;
+    font-size: 30px;
+}
+
+#lyricsdivmain {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    overflow: scroll;
+}
+
+
+
+.lyricsdiv {
+    width: 90%;
+    border: green 4px solid;
+    position: fixed;
+    top: 100px;
+    left: 5%;
+    height: 80%;
+    border-radius: 8px;
     display: none;
+
+}
+
+.lyricsheader {
+    border-radius: 5px;
+    border-bottom: 4px green solid;
+    width: 100%;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.795);
+}
+
+
+
+.c-menu {
+    width: 85%;
+    height: 75%;
+    border: red 2px solid;
+    z-index: 100;
 }
