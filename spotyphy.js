@@ -199,7 +199,7 @@ song3.addEventListener("click", ()=>{
 
   songThumb.style.setProperty("background","url('media/teri\ ore\ thumbnail.jpg')");
   songThumb.style.setProperty("background-size","cover");
-  lyricsdivmain.style.setProperty("background","url('image\ (1).jpeg')");
+  lyricsdivmain.style.setProperty("background","url('images\ (1).jpeg')");
   lyricsdivmain.innerHTML = " ";
   
 });
