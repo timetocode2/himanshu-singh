@@ -201,6 +201,10 @@ song3.addEventListener("click", ()=>{
   songThumb.style.setProperty("background-size","cover");
   lyricsdivmain.style.setProperty("background","url('images\ (1).jpeg')");
   lyricsdivmain.innerHTML = " ";
+  lyricsdivmain.style.setProperty("background-repeat","no-repeat");
+  lyricsdivmain.style.setProperty("background-size","cover");
+  lyricsdivmain.style.setProperty("background-position","center");
+
   
 });
 
