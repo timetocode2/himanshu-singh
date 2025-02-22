@@ -291,6 +291,13 @@ input.spotyphy-login {
 }
 
 #song4 {
+    background: url("panna-ki-tamanna-thumb.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#song5 {
     background: url("media/himanshu1.jpg");
     background-repeat: no-repeat;
     background-position: center;
