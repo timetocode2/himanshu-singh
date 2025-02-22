@@ -199,8 +199,8 @@ song3.addEventListener("click", ()=>{
 
   songThumb.style.setProperty("background","url('media/teri\ ore\ thumbnail.jpg')");
   songThumb.style.setProperty("background-size","cover");
-  lyricsdivmain.style.setProperty("background","url('')");
-  lyricsdivmain.innerHTML = "<span style='color:white;'>Lyrics not available for this song.</span>";
+  lyricsdivmain.style.setProperty("background","url('image (1).jpeg')");
+  lyricsdivmain.innerHTML = " ";
   
 });
 
