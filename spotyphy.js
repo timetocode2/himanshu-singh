@@ -376,25 +376,26 @@ lyricsdivclose.addEventListener('click',()=>{
 });
 
 
-
 const contHome = document.getElementById('cont-home');
 const contExplore = document.getElementById('cont-explore');
+const exploreDiv = document.getElementById('explore-div');
+const premiumDiv = document.getElementById('premium-div');
 // const contLikes = document.getElementById('cont-likes');
-// const contPre = document.getElementById('cont-pre');
+const contPre = document.getElementById('cont-pre');
 console.log('radhe radhe');
 
 contHome.addEventListener('click',()=>{
   // contHome.style.setProperty('display', "inherit");
-  contExplore.style.setProperty('display', "none");
+  exploreDiv.style.setProperty('display', "none");
   // contLikes.style.setProperty('display', "none");
-  // contPre.style.setProperty('display', "none");
+    premiumDiv.style.setProperty('display', "none");
 });
 
 contExplore.addEventListener('click',()=>{
-  contHome.style.setProperty('display', "none");
+  exploreDiv.style.setProperty('display', "inherit");
   // contExplore.style.setProperty('display', "inherit");
   // contLikes.style.setProperty('display', "none");
-  // contPre.style.setProperty('display', "none");
+  premiumDiv.style.setProperty('display', "none");
 });
 
 // constLikes.addEventListener('click',()=>{
@@ -404,12 +405,12 @@ contExplore.addEventListener('click',()=>{
 //   dcontPre.style.setProperty('display', "none");
 // });
 
-// contPre.addEventListener('click',()=>{
+ contPre.addEventListener('click',()=>{
 //   contHome.style.setProperty('display', "none");
-//   contExplore.style.setProperty('display', "none");
+   exploreDiv.style.setProperty('display', "none");
 //   contLikes.style.setProperty('display', "none");
-//   contPre.style.setProperty('display', "inherit");
-// });
+  premiumDiv.style.setProperty('display', "flex");
+ });
 
 // const searchbtn = document.getElementById('searchbtn');
 // const searchinput = document.getElementById('searchinput');
@@ -419,4 +420,20 @@ contExplore.addEventListener('click',()=>{
 //   searchinput.value = "";
 //   alert("Search for "+ searchvalue + " is not available right now.");
 // });
+
+
+
+
+
+
+
+document.getElementById("makePaymentBtn").addEventListener("click", () => {
+      const upiID = "9580338477@ptyes";  // सही UPI ID डालें
+      const name = "Himanshu Singh"; 
+      const amount = "10000";  // अमाउंट बदल सकते हैं
+      const upiLink = `upi://pay?pa=${upiID}&pn=${encodeURIComponent(name)}&mc=&tid=&tr=&tn=Payment&am=${amount}&cu=INR`;
+
+      window.location.href = upiLink;
+    });
+
 
