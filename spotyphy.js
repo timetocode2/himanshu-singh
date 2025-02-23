@@ -7,7 +7,7 @@ const firstPage = document.getElementById("guest-account");
 const secondPage = document.getElementById("guest-account-2");
 
 const musicplay = document.getElementById('musicplay');
-
+const footer = document.querySelector('footer');
 
 signUpFree.addEventListener("click", () => {
 
@@ -35,6 +35,7 @@ function validateForm() {
   secondPage.style.display = "none";
   document.querySelector('.container').style.setProperty('display', "inherit")
   document.getElementById('spotifyUser').innerText= "Hello "+ name;
+footer.style.setProperty('display','inherit');
 };
 
 
