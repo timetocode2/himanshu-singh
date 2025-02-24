@@ -452,7 +452,7 @@ input.spotyphy-login {
 
 
 
-.premium-div {
+.premium-div,.explore-div {
   width:100%;
   height: 80vh;
   position: fixed;
