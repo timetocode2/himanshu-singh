@@ -22,15 +22,15 @@ function validateForm() {
   let name = document.getElementById("input-name").value;
   let number = document.getElementById("input-number").value;
 
-  if (name.trim() === "") {
-      alert("Please enter your name.");
-      return;
-  }
+  // if (name.trim() === "") {
+  //     alert("Please enter your name.");
+  //     return;
+  // }
 
-  if (number.length !== 10 || isNaN(number)) {
-      alert("Please enter a valid 10-digit phone number.");
-      return;
-  }
+  // if (number.length !== 10 || isNaN(number)) {
+  //     alert("Please enter a valid 10-digit phone number.");
+  //     return;
+  // }
 
   secondPage.style.display = "none";
   document.querySelector('.container').style.setProperty('display', "inherit")
@@ -132,6 +132,7 @@ const songduration = document.getElementById('songduration');
 let anyaudio = "";
 
 song1.addEventListener("click", ()=>{
+  musicplay.style.setProperty('display',"inherit");
 const close111 = document.querySelectorAll(" #myaudio2, #myaudio3, #myaudio4, #myaudio5, #myaudio6, #myaudio7, #myaudio8, #myaudio9, #myaudio10, #myaudio11, #myaudio12, #myaudio13, #myaudio14, #myaudio15, #myaudio16, #myaudio17, #myaudio18");
 close111.forEach(close1 =>{
   close1.pause();
@@ -139,9 +140,12 @@ close111.forEach(close1 =>{
 if (audio1.paused) {
 audio1.play();
   playPauseBtn.textContent = 'Pause';
+  musicplay.style.setProperty('display',"inherit");
+
 } else {
   audio1.pause();
   playPauseBtn.textContent = 'Play';
+  musicplay.style.setProperty('display',"none");
 };
 anyaudio = audio1;
 seekBar.value = "0";
@@ -163,9 +167,13 @@ song2.addEventListener("click", ()=>{
   if (audio2.paused) {
     audio2.play();
     playPauseBtn.textContent = 'Pause';
+      musicplay.style.setProperty('display',"inherit");
+
   } else {
     audio2.pause();
     playPauseBtn.textContent = 'Play';
+      musicplay.style.setProperty('display',"none");
+
   };
   anyaudio = audio2;
   seekBar.value = "0";
@@ -190,9 +198,13 @@ song3.addEventListener("click", ()=>{
   if (audio3.paused) {
     audio3.play();
     playPauseBtn.textContent = 'Pause';
+      musicplay.style.setProperty('display',"inherit");
+
   } else {
     audio3.pause();
     playPauseBtn.textContent = 'Play';
+      musicplay.style.setProperty('display',"none");
+
   };
   anyaudio = audio3;
   seekBar.value = "0";
@@ -218,9 +230,13 @@ close111.forEach(close1 =>{
 if (audio4.paused) {
 audio4.play();
   playPauseBtn.textContent = 'Pause';
+    musicplay.style.setProperty('display',"inherit");
+
 } else {
   audio4.pause();
   playPauseBtn.textContent = 'Play';
+    musicplay.style.setProperty('display',"none");
+
 };
 anyaudio = audio4;
 seekBar.value = "0";
@@ -359,7 +375,7 @@ const lyricsdivmain = document.getElementById('lyricsdivmain');
 lyrics.addEventListener('click', ()=>{
 
   musicplay.style.setProperty('position',"fixed");
-  musicplay.style.setProperty('top',"0");
+  musicplay.style.setProperty('top',"-85vh");
   contHead.style.setProperty('visibility', 'hidden');
   contMain.style.setProperty('visibility', 'hidden');
   search.style.setProperty('visibility', 'hidden');
@@ -378,39 +394,44 @@ lyricsdivclose.addEventListener('click',()=>{
 
 
 const contHome = document.getElementById('cont-home');
+const homeDiv = document.querySelector('.spotyphy');
+
 const contExplore = document.getElementById('cont-explore');
 const exploreDiv = document.getElementById('explore-div');
-const premiumDiv = document.getElementById('premium-div');
+
 // const contLikes = document.getElementById('cont-likes');
+// const likesDiv = document.getElementById('likes-div');
+
 const contPre = document.getElementById('cont-pre');
-console.log('radhe radhe');
+const premiumDiv = document.getElementById('premium-div');
+
 
 contHome.addEventListener('click',()=>{
-  // contHome.style.setProperty('display', "inherit");
   exploreDiv.style.setProperty('display', "none");
-  // contLikes.style.setProperty('display', "none");
     premiumDiv.style.setProperty('display', "none");
+    // likesDiv.style.setProperty('display', "none");
+    homeDiv.style.setProperty('display', "inherit");
+  
 });
 
 contExplore.addEventListener('click',()=>{
   exploreDiv.style.setProperty('display', "inherit");
-  // contExplore.style.setProperty('display', "inherit");
-  // contLikes.style.setProperty('display', "none");
   premiumDiv.style.setProperty('display', "none");
+  // likesDiv.style.setProperty('display', "none");
+  homeDiv.style.setProperty('display', "none");
 });
 
 // constLikes.addEventListener('click',()=>{
-//   contHome.style.setProperty('display', "none");
-//   contExplore.style.setProperty('display', "none");
-//   contLikes.style.setProperty('display', "inherit");
-//   dcontPre.style.setProperty('display', "none");
+// homeDiv.innerHTML = " ";
+// homeDiv.style.setProperty('background',"black");
+
 // });
 
  contPre.addEventListener('click',()=>{
-//   contHome.style.setProperty('display', "none");
    exploreDiv.style.setProperty('display', "none");
-//   contLikes.style.setProperty('display', "none");
   premiumDiv.style.setProperty('display', "flex");
+  homeDiv.style.setProperty('display', "none");
+
  });
 
 // const searchbtn = document.getElementById('searchbtn');

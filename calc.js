@@ -55,4 +55,3 @@ calcKeypadBtn15.addEventListener("click", () => {
 calcKeypadBtn16.addEventListener("click", () => {
     calcScrn2.innerHTML = "";
 });
-

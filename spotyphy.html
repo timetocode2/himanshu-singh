@@ -39,7 +39,7 @@
 
 
                 <button onclick="validateForm()" class="spotyphy-login login-margin flexcenter scale"
-                    id="spotyphy-login-check" >Submit</button>
+                    id="spotyphy-login-check">Submit</button>
             </div>
 
             <!-- first page and second page has been completed.. -->
@@ -53,10 +53,11 @@
                         <div class="spotifyUser" id="spotifyUser"></div>
                     </div>
                     <div class="cont-setting" id="cont-setting"><img class="mysettingimage" src="media/settitng.jpg"
-                            alt="no" width="100%"></div>
+                            alt="no" width="100%">
+                    </div>
                 </div>
                 <input class="search" id="search" placeholder="What do you want to listen to">
-                <div class="cont-main flexcenter" id="cont-main">
+                <div class="cont-main flex" id="cont-main">
 
                     <div class="songcard" id="songcard1">
                         <div class="song" id="song1"></div>
@@ -65,7 +66,7 @@
 
                     <div class="songcard" id="songcard2">
                         <div class="song" id="song3"></div>
-                        <div class="song" id="song4" onclick="playaudio('myaudio4')">Soon...</div>
+                        <div class="song" id="song4" onclick="playaudio('myaudio4')"></div>
                     </div>
                     <div class="songcard" id="songcard3">
                         <div class="song" id="song5" onclick="playaudio('myaudio5')">Soon...</div>
@@ -119,11 +120,10 @@
                 <audio id="myaudio18" class="myaudio" src=""></audio>
 
 
-                
+
                 <div class="lyricsdiv" id="lyricsdiv">
-                    <div class="lyricsheader flexcenter" id="lyricsheader">
-                        <div class="lyricsdivclose flexcenter" id="lyricsdivclose">Close</div>
-                    </div>
+                    
+                    <div class="lyricsdivclose flexcenter" id="lyricsdivclose">Close</div>
                     <div class="lyricsdivmain" id="lyricsdivmain"></div>
                 </div>
 
@@ -132,58 +132,60 @@
 
 
 
-        </div>
+            </div>
     </main>
     <footer>
-      
-                <div class="cont-footer flexcenter" id="cont-footer">
 
-                    <div class="musicplay flex" id="musicplay">
-                        <div class="song-thumb" id="song-thumb"></div>
-                        <div class="flexcenter">
-                            <div class="flex aligncenter">
-                                <button id="playPauseBtn">Play</button>
-                                <div class="lyrics flexcenter" id="lyrics">Lyrics</div>
-                                <input type="range" id="volumeBar" min="0" max="1" step="0.1" value="1">
-                            </div>
-                            <div class="flex">
-                                <div class="timeout flexcenter" id="audiotime">0:00</div>
-                                <input type="range" id="seekBar" value="0" step="1" min="0">
-                                <div class="timeout flexcenter" id="songduration">0:00</div>
-                            </div>
-                        </div>
+        <div class="cont-footer flexcenter" id="cont-footer">
+
+            <div class="musicplay flex" id="musicplay">
+                <div class="song-thumb" id="song-thumb"></div>
+                <div class="flexcenter">
+                    <div class="flex aligncenter">
+                        <button id="playPauseBtn">Play</button>
+                        <div class="lyrics flexcenter" id="lyrics">Lyrics</div>
+                        <input type="range" id="volumeBar" min="0" max="1" step="0.1" value="1">
+                        <div class="lyrics closeMusicPlat flexcenter" id="closeMusicPlay">Close</div>
                     </div>
-                    <div class="cont-menu gridcenter" id="cont-menu">
-                        <div class="cont-home c-menu flexcenter" id="cont-home">home</div>
-                        <div class="cont-explore c-menu flexcenter" id="cont-explore">Explore</div>
-                        <div class="cont-likes c-menu flexcenter" id="cont-likes">Likes</div>
-                        <div class="cont-pre c-menu flexcenter" id="cont-pre">Premiume</div>
+                    <div class="flex">
+                        <div class="timeout flexcenter" id="audiotime">0:00</div>
+                        <input type="range" id="seekBar" value="0" step="1" min="0">
+                        <div class="timeout flexcenter" id="songduration">0:00</div>
                     </div>
                 </div>
-      <div class="footer-main" id="footer-main">
-        <div class="explore-div" id="explore-div">
- <div class="songcard" id="songcard6">
-                   <div class="song" id="main-home"><a href="index.html">Explore <br> Main Web</a></div>
-                        <div class="song" id="tic"><a href="tictactoe.html">Explore<br>Tic Tac App</a></div>
-                    </div>
-               <div class="songcard" id="songcard6">
-                        <div class="song" id="calc">Explore<br>.......</div>
-                        <div class="song" id="NotAvailable">Soon...</div>
-                    </div></div>
-        
-        <div id="premium-div" class="premium-div">
-          <div class="payment">
-            <h1 class="payment-h1">Premium Membership</h1>
-            <div class="button-container">
-              <button id="makePaymentBtn" class="premium-btn">Pay Now</button>
-              <button class="premium-btn" Id="makePaymentBtn2">Offer 2</button>
- <button class="premium-btn">Why you should take premium</button>
             </div>
-          </div>
-      </div>
-      </div>
+            <div class="cont-menu gridcenter" id="cont-menu">
+                <div class="cont-home c-menu flexcenter" id="cont-home">home</div>
+                <div class="cont-explore c-menu flexcenter" id="cont-explore">Explore</div>
+                <div class="cont-likes c-menu flexcenter" id="cont-likes">Likes</div>
+                <div class="cont-pre c-menu flexcenter" id="cont-pre">Premiume</div>
+            </div>
+        </div>
+        <div class="footer-main" id="footer-main">
+            <div class="explore-div" id="explore-div">
+                <div class="songcard" id="songcard6">
+                    <div class="song" id="main-home"><a href="index.html">Explore <br> Main Web</a></div>
+                    <div class="song" id="tic"><a href="tictactoe.html">Explore<br>Tic Tac App</a></div>
+                </div>
+                <div class="songcard" id="songcard6">
+                    <div class="song" id="calc">Explore<br>.......</div>
+                    <div class="song" id="NotAvailable">Soon...</div>
+                </div>
+            </div>
 
-            </footer> 
+            <div id="premium-div" class="premium-div">
+                <div class="payment">
+                    <h1 class="payment-h1">Premium Membership</h1>
+                    <div class="button-container">
+                        <button id="makePaymentBtn" class="premium-btn">Pay Now</button>
+                        <button class="premium-btn" Id="makePaymentBtn2">Offer 2</button>
+                        <button class="premium-btn">Why you should take premium</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
     <script src="spotyphy.js"></script>
 </body>
 

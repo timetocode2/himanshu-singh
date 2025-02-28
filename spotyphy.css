@@ -4,7 +4,9 @@
     user-select: none;
 }
 
-header,main,footer {
+header,
+main,
+footer {
     background-color: #000;
 }
 
@@ -130,6 +132,7 @@ body {
 #guest-account-2 {
     visibility: hidden;
     position: fixed;
+    display: flex;
 }
 
 #guest-account-2>img {
@@ -164,10 +167,13 @@ input.spotyphy-login {
 
 .cont-head {
     width: 100%;
+    height: 57px;
     position: fixed;
-    top: 0;
+    top: 1px;
     background: #000;
     z-index: 1;
+    align-items: center;
+    /* border: 1px white solid; */
 }
 
 .ping {
@@ -202,7 +208,7 @@ input.spotyphy-login {
 }
 
 .mysettingimage {
-    animation: rotate360 3s linear infinite;
+    animation: rotate360 5s linear infinite;
     width: 100%;
     height: 100%;
     border-radius: 100px;
@@ -221,11 +227,11 @@ input.spotyphy-login {
 
 .search {
     width: 93%;
-    height: 40px;
+    height: 42px;
     background-color: white;
     color: rgba(19, 17, 17, 0.836);
     position: fixed;
-    top: 55px;
+    top: 60px;
     border-radius: 5px;
     font-size: 20px;
     padding: 1px 15px;
@@ -236,24 +242,32 @@ input.spotyphy-login {
 
 .cont-main {
     position: relative;
-    top: 118px;
+    top: 120px;
     width: 100%;
     z-index: 0;
+    /* height: calc(100vh - 330px); */
+    overflow: auto;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px white solid;
 }
 
 .songcard {
 
     width: 95%;
-    height: 120px;
+    height: 110px;
     display: flex;
+
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-top: 22px;
 }
 
 .song {
-    border: rgb(115, 255, 0) solid 2px;
-    width: 48%;
-    height: 100%;
+    /* border: rgb(115, 255, 0) solid 1px; */
+    box-shadow: rgba(255, 255, 255, 0.582) 2px 2px 10px;
+    border-radius: 8px;
+    width: 46%;
+    height: 110px;
     font-size: 28px;
     font-weight: 700;
     display: flex;
@@ -315,16 +329,24 @@ input.spotyphy-login {
     position: fixed;
     bottom: 0;
     z-index: 10;
+    backdrop-filter: blur(6px);
+
+    /* background: rgba(255, 255, 255, 0.719);
+    backdrop-filter: blur(4px); */
+
+
 
 }
 
 .musicplay {
-    background: rgba(255, 255, 255, 0.253);
+    background: rgba(223, 60, 20, 0.144);
     height: 70px;
-    width: 97%;
+    width: 100%;
     border-radius: 8px;
     align-items: center;
-    backdrop-filter: blur(8px);
+    border: 0.00001px #ffffff63 solid;
+    display: none;
+
 }
 
 .song-thumb {
@@ -339,9 +361,8 @@ input.spotyphy-login {
 }
 
 .cont-menu {
-    backdrop-filter: blur(4px);
-
-    background: rgba(255, 255, 255, 0.719);
+    backdrop-filter: blur(10px);
+    /* background: rgba(255, 255, 255, 0.719); */
     height: 60px;
     width: 100%;
     margin-top: 10px;
@@ -379,10 +400,10 @@ input.spotyphy-login {
 }
 
 .lyrics {
-    width: 80px;
-    height: 27px;
+    width: 60px;
+    height: 24px;
 
-    margin: 0 8px;
+    margin: 0 8px 2px 8px;
     border-radius: 8px;
     border: white 1px solid;
 }
@@ -393,21 +414,12 @@ input.spotyphy-login {
 
 }
 
-
-.lyricsheader {
-    border-radius: 5px;
-    border-bottom: 4px green solid;
-    width: 100%;
-    height: 40px;
-    background: rgba(255, 255, 255, 0.795);
-}
-
 .lyricsdivclose {
-    border-radius: 5px;
-    width: 35%;
-    height: 100%;
-    background-color: orangered;
+    background-color: rgb(204, 135, 31);
     font-size: 30px;
+    position: fixed;
+    border-radius: 10px;
+    width: 90px;
 }
 
 #lyricsdivmain {
@@ -421,11 +433,10 @@ input.spotyphy-login {
 
 
 .lyricsdiv {
-    width: 90%;
+    width: 97%;
     border: green 4px solid;
     position: fixed;
     top: 100px;
-    left: 5%;
     height: 80%;
     border-radius: 8px;
     display: none;
@@ -445,104 +456,109 @@ input.spotyphy-login {
 .c-menu {
     width: 85%;
     height: 75%;
-    border: red 2px solid;
-    z-index: 100;
+    background: linear-gradient(to right, #1a1a1a 0%, #2d2d2d 50%, #1a1a1a 100%);
+    top: 1px;
+    border-radius: 20px;
+    border: 1px white solid;
+    box-shadow: rgb(71, 153, 5) 4px 5px 7px;
 }
 
 
 
 
-.premium-div,.explore-div {
-  width:100%;
-  height: 80vh;
-  position: fixed;
-  top:0;
-  z-index: 1000;
-  display: none;
-  margin: 0;
-  padding: 0;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(to right,#1a1a1a 0%,#2d2d2d 50%,#1a1a1a 100%);
-  font-family: 'Arial', sans-serif;
-  overflow: hidden;
-        }
+.premium-div,
+.explore-div {
+    width: 100%;
+    height: 80vh;
+    position: fixed;
+    top: 0;
+    display: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #1a1a1a 0%, #2d2d2d 50%, #1a1a1a 100%);
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+}
 
-        /* Metallic texture overlay */
+/* Metallic texture overlay */
 
-        .payment {
-            background: rgba(15, 15, 15, 0.9);
-            padding: 4rem 6rem;
-            border-radius: 1rem;
-            box-shadow: 
-                0 0 40px rgba(0,0,0,0.5),
-                0 0 0 1px rgba(255,255,255,0.03);
-            position: relative;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255,255,255,0.05);
-        }
+.payment {
+    background: rgba(15, 15, 15, 0.9);
+    padding: 4rem 6rem;
+    border-radius: 1rem;
+    box-shadow:
+        0 0 40px rgba(0, 0, 0, 0.5),
+        0 0 0 1px rgba(255, 255, 255, 0.03);
+    position: relative;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
 
-        .payment-h1 {
-            color: #e5e5e5;
-            font-weight: 300;
-            letter-spacing: 3px;
-            font-size: 2.2rem;
-            margin-bottom: 3rem;
-            position: relative;
-            text-align: center;
-        }
+.payment-h1 {
+    color: #e5e5e5;
+    font-weight: 300;
+    letter-spacing: 3px;
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+    position: relative;
+    text-align: center;
+}
 
-        .payment-h1::after {
-            content: '';
-            position: absolute;
-            bottom: -1.5rem;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 60px;
-            height: 2px;
-            background: linear-gradient(to right, transparent 0%, #ffffff 50%, transparent 100%);
-        }
+.payment-h1::after {
+    content: '';
+    position: absolute;
+    bottom: -1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(to right, transparent 0%, #ffffff 50%, transparent 100%);
+}
 
-        .button-container {
-            display: grid;
-            gap: 1.5rem;
-            justify-content: center;
-        }
+.button-container {
+    display: grid;
+    gap: 1.5rem;
+    justify-content: center;
+}
 
-        .premium-btn {
-            padding: 18px 35px;
-            font-size: 1.1em;
-            border: 1px white solid;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            background: linear-gradient(45deg, #142E66, #4A79C5);
-            color: #000;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-        }
+.premium-btn {
+    padding: 18px 35px;
+    font-size: 1.1em;
+    border: 1px white solid;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: linear-gradient(45deg, #142E66, #4A79C5);
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
 
-        .premium-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4);
-        }
+.premium-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4);
+}
 
-        .premium-btn:active {
-            transform: translateY(0);
-        }
+.premium-btn:active {
+    transform: translateY(0);
+}
 
-        /* Adding subtle radial overlay for depth */
-        premium-div::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.2) 100%);
-            pointer-events: none;
-        }
+/* Adding subtle radial overlay for depth */
+premium-div::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.2) 100%);
+    pointer-events: none;
+}
 
-footer{ display:none; }
+footer {
+    display: none;
+}

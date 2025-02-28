@@ -503,24 +503,30 @@ const newlink = document.createElement('link');
 
 const loadCalc = document.getElementById("loadCalc");
 const loadhome = document.getElementById("home");
-
+    let oldScript = document.getElementById("calcjs");
+if(oldScript){
+        oldScript.remove();
+    };
 loadCalc.addEventListener("click", ()=>{
 
     fetch('calc.html').then(response => response.text()).then(html =>{
         document.querySelector("main").innerHTML = html;
     });
-
-    let oldScript = document.getElementById("calcjs");
     if(oldScript){
         oldScript.remove();
     };
+
+    
+setTimeout(() => {
+ 
+
 
     let newscript = document.createElement('script');
     newscript.src= 'calc.js';
     newscript.type= 'text/javascript';
     newscript.id= 'calcjs';
     document.body.appendChild(newscript);
-    
+    }, 1000);
 });
 
 loadhome.addEventListener("click", ()=>{
@@ -642,9 +648,3 @@ loadhome.addEventListener("click", ()=>{
 `;
 document.getElementById("calcjs").remove();
 });
-
-
-
-
-
-
