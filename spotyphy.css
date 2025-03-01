@@ -282,7 +282,7 @@ input.spotyphy-login {
 }
 
 #song1 {
-    background: url("media/jo\ tu\ na\ mila\ thumbnail.jpg");
+    background: url("media/jo-tu-na-mila-thumbnail.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -291,21 +291,21 @@ input.spotyphy-login {
 }
 
 #song2 {
-    background: url("media/tum\ hi\ ho\ thumbnail.jpg");
+    background: url("media/tum-hi-ho-thumbnail.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 #song3 {
-    background: url("media/teri\ ore\ thumbnail.jpg");
+    background: url("media/teri-ore-thumbnail.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 #song4 {
-    background: url("panna-ki-tamanna-thumb.jpeg");
+    background: url("media/panna-ki-tamanna-thumb.jpeg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -414,27 +414,10 @@ input.spotyphy-login {
 
 }
 
-.lyricsdivclose {
-    background-color: rgb(204, 135, 31);
-    font-size: 30px;
-    position: fixed;
-    border-radius: 10px;
-    width: 90px;
-}
-
-#lyricsdivmain {
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    color: white;
-    overflow: scroll;
-}
-
 
 
 .lyricsdiv {
     width: 97%;
-    border: green 4px solid;
     position: fixed;
     top: 100px;
     height: 80%;
@@ -443,6 +426,36 @@ input.spotyphy-login {
 
 }
 
+#lyricsdivmain {
+    width: 100%;
+    height: 60%;
+    background-repeat: no-repeat;
+    color: white;
+    overflow: scroll;
+    border: green solid;
+    border-width: 4px 4px 4px 4px;
+    border-radius: 8px;
+}
+#lyricsdivmain2{
+    width: 97vw;
+    height: 54vw;
+    background-repeat: no-repeat;
+    color: white;
+    overflow: scroll;
+    border: green solid;
+    border-width: 4px 4px 4px 4px;
+    border-radius: 8px;
+}
+
+
+
+.lyricsdivclose {
+    background-color: rgb(204, 135, 31);
+    font-size: 30px;
+    position: fixed;
+    border-radius: 10px;
+    width: 90px;
+}
 .lyricsheader {
     border-radius: 5px;
     border-bottom: 4px green solid;
@@ -450,7 +463,6 @@ input.spotyphy-login {
     height: 40px;
     background: rgba(255, 255, 255, 0.795);
 }
-
 
 
 .c-menu {
