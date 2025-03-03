@@ -40,39 +40,22 @@ function validateForm() {
 
 
 
-// function playaudio(aaa){
-//   const audio111 = document.getElementById(aaa);
-//   audio111.play();
-
-// playPauseBtn.addEventListener('click', () => {
-//   if (audio111.paused) {
-//     audio111.play();
-//     playPauseBtn.textContent = 'Pause';
-//   } else {
-//     audio111.pause();
-//     playPauseBtn.textContent = 'Play';
-//   }
-// });
-
-// seekBar.addEventListener('input', () => {
-// audio111.currentTime = seekBar.value;
-// });
-
-// volumeBar.addEventListener('input', () => {
-//   audio111.volume = volumeBar.value;
-// });
-
-// audio111.addEventListener('timeupdate', () => {
-// seekBar.max = audio111.duration;
-// seekBar.value = audio111.currentTime;
-// });
-
-// audio111.addEventListener('ended', () => {
-//   playPauseBtn.textContent = 'Play';
-// });
 
 
-// };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const contHead = document.getElementById('cont-head');
 const contMain = document.getElementById('cont-main');
 const search = document.getElementById('search');
@@ -147,8 +130,13 @@ function playaudio(audioId, thumbnail) {
   if (myaudio.paused) {
     myaudio.play();
     playPauseBtn.textContent = 'Pause';
-    musicplay.style.setProperty('display', "flex");
+    if (window.matchMedia("(orientation: landscape)").matches) {
 
+      musicplay.style.setProperty('display', 'inherit');}
+      else{
+        musicplay.style.setProperty('display', 'flex');
+      };
+      
   } else {
     myaudio.pause();
     musicplay.style.setProperty('display', "none");
@@ -278,7 +266,17 @@ const divExtraBali = document.querySelector('.divExtraBali');
 
 
 lyrics.addEventListener('click', () => {
-  musicplay.style.setProperty('top', "10px");
+
+  if (window.matchMedia("(orientation: landscape)").matches) {
+    lyricsdivclose.style.setProperty('display', "none");
+    fullLyrics.style.setProperty('display', "none");
+    lyricsdivmain2.style.setProperty('display', "none");
+    lyricsdivmain1.style.setProperty('top', "0");
+    lyricsdivmain1.style.setProperty('width', "90%");
+    lyricsdivmain1.style.setProperty('height', "100%");}
+    else{musicplay.style.setProperty('top', "10px");};
+
+    
   contHead.style.setProperty('display', 'none');
   contMain.style.setProperty('display', 'none');
   search.style.setProperty('display', 'none');

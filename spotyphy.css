@@ -249,17 +249,18 @@ input.spotyphy-login {
     top: 120px;
     width: 100%;
     z-index: 0;
-    /* height: calc(100vh - 330px); */
     overflow: auto;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    display: flex;
     border-bottom: 1px white solid;
 }
 
 .songcard {
 
-    width: 95%;
-    height: 110px;
+    width: 95vmin;
+    height: 25.875vmin;
     display: flex;
 
     justify-content: space-between;
@@ -270,8 +271,8 @@ input.spotyphy-login {
     /* border: rgb(115, 255, 0) solid 1px; */
     box-shadow: rgba(255, 255, 255, 0.582) 2px 2px 10px;
     border-radius: 8px;
-    width: 46%;
-    height: 110px;
+    width: 46vmin;
+    height: 25.875vmin;
     font-size: 28px;
     font-weight: 700;
     display: flex;
@@ -345,7 +346,7 @@ input.spotyphy-login {
 
 .song-thumb {
     border-radius: 8px;
-    width: 96px;
+    width: 20vw;
     height: 54px;
     margin: 0 10px;
     background-repeat: no-repeat;
@@ -360,12 +361,14 @@ input.spotyphy-login {
 
     /* this is for main music control jisme thumbnail include nhi hai iske alava isme play,pause,volume,lyrics hai.. */
 }
-.submusicdiv1{
+
+.submusicdiv1 {
     margin-bottom: 3px;
+    display: flex;
 }
 
 #volumeBar {
-    width: 80px;
+    width: 16.66vw;
 }
 
 #seekBar {
@@ -375,7 +378,7 @@ input.spotyphy-login {
 
 #playPauseBtn {
     border-radius: 8px;
-    width: 80px;
+    width: 16.66vw;
     height: 27px;
 }
 
@@ -393,7 +396,7 @@ input.spotyphy-login {
 }
 
 .lyrics {
-    width: 60px;
+    width: 14vw;
     height: 24px;
 
     margin: 0 8px 2px 8px;
@@ -412,7 +415,7 @@ input.spotyphy-login {
 
 #lyricsdivmain1 {
     margin: 10px auto 15px auto;
-background: linear-gradient(to right, rgba(49, 235, 49, 0.185) 0%,  #1a1a1a 40%,#1a1a1a 60%, #8f56eb65 100%);
+    background: linear-gradient(to right, rgba(49, 235, 49, 0.185) 0%, #1a1a1a 40%, #1a1a1a 60%, #8f56eb65 100%);
     width: 80%;
     height: 40vh;
     background-repeat: no-repeat;
@@ -426,6 +429,7 @@ background: linear-gradient(to right, rgba(49, 235, 49, 0.185) 0%,  #1a1a1a 40%,
     line-height: 25px;
     font-size: 20px;
 }
+
 .lyricsdivmain::-webkit-scrollbar {
     width: 0px;
 }
@@ -436,7 +440,7 @@ background: linear-gradient(to right, rgba(49, 235, 49, 0.185) 0%,  #1a1a1a 40%,
     text-shadow: rgb(14, 170, 14) 1px 1px 1px;
     color: #db1010;
     margin: 48px auto;
-border: #db1010 2px solid;
+    border: #db1010 2px solid;
     width: 80vw;
     height: 54vw;
     background-repeat: no-repeat;
@@ -449,8 +453,9 @@ border: #db1010 2px solid;
 
 
 
-.lyricsdivclose,.fullLyrics {
-    background: linear-gradient(to right, rgba(49, 235, 49, 0.206) 0%,  rgb(26, 26, 26) 40%,#1a1a1a 60%, rgba(143, 86, 235, 0.315) 100%);
+.lyricsdivclose,
+.fullLyrics {
+    background: linear-gradient(to right, rgba(49, 235, 49, 0.206) 0%, rgb(26, 26, 26) 40%, #1a1a1a 60%, rgba(143, 86, 235, 0.315) 100%);
     font-size: 25px;
     border-radius: 10px;
     width: 40vw;
@@ -470,6 +475,7 @@ border: #db1010 2px solid;
     height: 40px;
     background: rgba(255, 255, 255, 0.795);
 }
+
 .headingInLyrics {
     font-size: 25px;
     font-weight: 700;
@@ -477,16 +483,18 @@ border: #db1010 2px solid;
     text-align: center;
     margin-top: 5px;
 }
-.divExtraBali{
+
+.divExtraBali {
     width: 100%;
     height: 200px;
     position: relative;
-top: 100px;
-   
+    top: 100px;
+
 }
+
 .cont-menu {
     background: rgba(58, 29, 224, 0.096);
-border-radius: 8px;
+    border-radius: 8px;
     position: fixed;
     bottom: 3px;
     z-index: 10;
@@ -609,3 +617,134 @@ premium-div::after {
 footer {
     display: none;
 }
+
+
+
+
+
+
+
+@media screen and (orientation: landscape) {
+    .container {
+        width: 60%;
+        border-right: 6px rgb(15, 179, 15) solid;
+
+    }
+
+    .cont-main {}
+
+    .cont-head {
+        width: 60%;
+        position: fixed;
+
+    }
+
+    .cont-setting {
+        right: 41%;
+    }
+
+    .search {
+        width: 56%;
+        left: 288px;
+
+    }
+
+    .cont-menu {
+        width: 40%;
+        top: 0;
+        right: -9px;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 10px;
+        height: 24vmin;
+    }
+
+    #musicplay {
+        width: 38%;
+        height: 55vmin;
+        right: 0px;
+        padding: 0;
+        top: 28vmin;
+
+    }
+
+    .song-thumb {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        margin: 0;
+        box-shadow: none;
+        z-index: 0;
+    }
+
+    .musicdiv {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 1;
+        width: 38vw;
+        height: 52vmin;
+    }
+
+
+
+
+    .submusicdiv1 {
+        margin-bottom: 3px;
+        flex-direction: column;
+background-color: #142e66de;
+padding: 15px;
+    }
+    .submusicdiv2 {
+background-color: #142e66de;
+padding: 10px;
+border: white 1px solid;
+    }
+
+    #volumeBar {
+        width: 14vw;
+        margin-bottom: 1vw;
+    }
+
+    #seekBar {
+        width: 25vw;
+
+    }
+
+    #playPauseBtn {
+        margin-bottom: 1vw;
+        border-radius: 8px;
+        width: 16.66vw;
+        height: 27px;
+    }
+
+    .timeout {
+        margin-right: 5px;
+        background-color: rgba(255, 255, 255, 0.5);
+        border: 1px white solid;
+        border-radius: 8px;
+        width: 46px;
+        height: 23px;
+    }
+
+    #duration {
+        margin-left: 5px;
+    }
+
+    .lyrics {
+        width: 14vw;
+        height: 24px;
+        margin-bottom: 1vw;
+        border-radius: 8px;
+        border: white 1px solid;
+    }
+#fullLyrics, #lyricsdivclose {
+    width: 20vw;
+top: 0;
+}
+
+    #lyricsdivmain2{
+        width: 59vw;
+        top: 0;
+    }
