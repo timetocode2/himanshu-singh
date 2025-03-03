@@ -60,13 +60,17 @@
                 <div class="cont-main flex" id="cont-main">
 
                     <div class="songcard" id="songcard1">
-                        <div class="song" id="song1" onclick="playaudio('myaudio1','url(media/jo-tu-na-mila-thumbnail.jpg)')"></div>
-                        <div class="song" id="song2" onclick="playaudio('myaudio2','url(media/tum-hi-ho-thumbnail.jpg)')"></div>
+                        <div class="song" id="song1"
+                            onclick="playaudio('myaudio1','url(media/jo-tu-na-mila-thumbnail.jpg)')"></div>
+                        <div class="song" id="song2"
+                            onclick="playaudio('myaudio2','url(media/tum-hi-ho-thumbnail.jpg)')"></div>
                     </div>
 
                     <div class="songcard" id="songcard2">
-                        <div class="song" id="song3" onclick="playaudio('myaudio3','url(media/teri-ore-thumbnail.jpg)')"></div>
-                        <div class="song" id="song4" onclick="playaudio('myaudio4','url(media/panna-ki-tamanna-thumb.jpeg)')"></div>
+                        <div class="song" id="song3"
+                            onclick="playaudio('myaudio3','url(media/teri-ore-thumbnail.jpg)')"></div>
+                        <div class="song" id="song4"
+                            onclick="playaudio('myaudio4','url(media/panna-ki-tamanna-thumb.jpeg)')"></div>
                     </div>
                     <div class="songcard" id="songcard3">
                         <div class="song" id="song5" onclick="playaudio('myaudio5')">Soon...</div>
@@ -121,13 +125,18 @@
 
 
 
-                <div class="lyricsdiv" id="lyricsdiv">
-                    
-                    <div class="lyricsdivclose flexcenter" id="lyricsdivclose">Close</div>
-                    <div class="lyricsdivmain" id="lyricsdivmain"></div>
-                    <div class="lyricsdivmain" id="lyricsdivmain2"></div>
-                </div>
 
+                <div class="lyricsdivmain" id="lyricsdivmain1"></div>
+                <div class="flex">
+                    <div class="fullLyrics" id="fullLyrics">Full Lyrics</div>
+                    <div class="lyricsdivclose" id="lyricsdivclose">Close Lyrics</div>
+                </div>
+                <div class="lyricsdivmain flexcenter" id="lyricsdivmain2"></div>
+
+
+
+                
+                <div class="divExtraBali" id="divExtraBali"></div>
 
 
 
@@ -137,31 +146,31 @@
     </main>
     <footer>
 
-        <div class="cont-footer flexcenter" id="cont-footer">
 
-            <div class="musicplay flex" id="musicplay">
-                <div class="song-thumb" id="song-thumb"></div>
-                <div class="flexcenter">
-                    <div class="flex aligncenter">
-                        <button id="playPauseBtn">Play</button>
-                        <div class="lyrics flexcenter" id="lyrics">Lyrics</div>
-                        <input type="range" id="volumeBar" min="0" max="1" step="0.1" value="1">
-                        <div class="lyrics closeMusicPlat flexcenter" id="closeMusicPlay">Close</div>
-                    </div>
-                    <div class="flex">
-                        <div class="timeout flexcenter" id="audiotime">0:00</div>
-                        <input type="range" id="seekBar" value="0" step="1" min="0">
-                        <div class="timeout flexcenter" id="songduration">0:00</div>
-                    </div>
+
+        <div class="musicplay flex" id="musicplay">
+            <div class="song-thumb" id="song-thumb"></div>
+            <div class="flexcenter musicdiv">
+                <div class="flex aligncenter submusicdiv1">
+                    <button id="playPauseBtn">Play</button>
+                    <div class="lyrics flexcenter" id="lyrics">Lyrics</div>
+                    <input type="range" id="volumeBar" min="0" max="1" step="0.1" value="1">
+                    <div class="lyrics closeMusicPlay flexcenter" id="closeMusicPlay">Close</div>
+                </div>
+                <div class="flex">
+                    <div class="timeout flexcenter" id="audiotime">0:00</div>
+                    <input type="range" id="seekBar" value="0" step="1" min="0">
+                    <div class="timeout flexcenter" id="songduration">0:00</div>
                 </div>
             </div>
-            <div class="cont-menu gridcenter" id="cont-menu">
-                <div class="cont-home c-menu flexcenter" id="cont-home">home</div>
-                <div class="cont-explore c-menu flexcenter" id="cont-explore">Explore</div>
-                <div class="cont-likes c-menu flexcenter" id="cont-likes">Likes</div>
-                <div class="cont-pre c-menu flexcenter" id="cont-pre">Premiume</div>
-            </div>
         </div>
+        <div class="cont-menu gridcenter" id="cont-menu">
+            <div class="cont-home c-menu flexcenter" id="cont-home">home</div>
+            <div class="cont-explore c-menu flexcenter" id="cont-explore">Explore</div>
+            <div class="cont-likes c-menu flexcenter" id="cont-likes">Likes</div>
+            <div class="cont-pre c-menu flexcenter" id="cont-pre">Premiume</div>
+        </div>
+
         <div class="footer-main" id="footer-main">
             <div class="explore-div" id="explore-div">
                 <div class="songcard" id="songcard6">

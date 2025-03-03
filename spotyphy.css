@@ -22,7 +22,11 @@ body {
     background-color: #000;
     font-family: 'Times New Roman', Times, serif;
     color: white;
-    height: 00vh;
+    width: 100vw;
+    scrollbar-width: none;
+
+    -ms-overflow-style: none;
+
 }
 
 .flexcenter {
@@ -324,51 +328,40 @@ input.spotyphy-login {
     display: none;
 }
 
-.cont-footer {
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    z-index: 10;
-    backdrop-filter: blur(6px);
-
-    /* background: rgba(255, 255, 255, 0.719);
-    backdrop-filter: blur(4px); */
-
-
-
-}
 
 .musicplay {
-    background: rgba(223, 60, 20, 0.144);
+    position: fixed;
+    bottom: 75px;
+    z-index: 10;
+    border: 0.00001px #ffffff63 solid;
     height: 70px;
     width: 100%;
     border-radius: 8px;
-    align-items: center;
-    border: 0.00001px #ffffff63 solid;
     display: none;
+    align-items: center;
+    backdrop-filter: blur(10px);
 
 }
 
 .song-thumb {
     border-radius: 8px;
-    width: 80px;
-    height: 45px;
-    border: rgb(115, 255, 0) solid 2px;
+    width: 96px;
+    height: 54px;
     margin: 0 10px;
     background-repeat: no-repeat;
     background-position: center;
+    display: inline-block;
+    box-shadow: #2765eb 4px 4px 0px;
 
 }
 
-.cont-menu {
-    backdrop-filter: blur(10px);
-    /* background: rgba(255, 255, 255, 0.719); */
-    height: 60px;
-    width: 100%;
-    margin-top: 10px;
+.musicdiv {
+    display: inline-block;
 
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* this is for main music control jisme thumbnail include nhi hai iske alava isme play,pause,volume,lyrics hai.. */
+}
+.submusicdiv1{
+    margin-bottom: 3px;
 }
 
 #volumeBar {
@@ -416,46 +409,60 @@ input.spotyphy-login {
 
 
 
-.lyricsdiv {
-    width: 97%;
-    position: fixed;
-    top: 100px;
-    height: 80%;
-    border-radius: 8px;
-    display: none;
 
-}
-
-#lyricsdivmain {
-    width: 100%;
-    height: 60%;
+#lyricsdivmain1 {
+    margin: 10px auto 15px auto;
+background: linear-gradient(to right, rgba(49, 235, 49, 0.185) 0%,  #1a1a1a 40%,#1a1a1a 60%, #8f56eb65 100%);
+    width: 80%;
+    height: 40vh;
     background-repeat: no-repeat;
     color: white;
     overflow: scroll;
-    border: green solid;
-    border-width: 4px 4px 4px 4px;
     border-radius: 8px;
+    position: relative;
+    top: 100px;
+    display: none;
+    padding: 15px;
+    line-height: 25px;
+    font-size: 20px;
 }
-#lyricsdivmain2{
-    width: 97vw;
+.lyricsdivmain::-webkit-scrollbar {
+    width: 0px;
+}
+
+#lyricsdivmain2 {
+    padding-top: 10px;
+    font-size: 20px;
+    text-shadow: rgb(14, 170, 14) 1px 1px 1px;
+    color: #db1010;
+    margin: 48px auto;
+border: #db1010 2px solid;
+    width: 80vw;
     height: 54vw;
     background-repeat: no-repeat;
-    color: white;
     overflow: scroll;
-    border: green solid;
-    border-width: 4px 4px 4px 4px;
     border-radius: 8px;
+    position: relative;
+    top: 100px;
+    display: none;
 }
 
 
 
-.lyricsdivclose {
-    background-color: rgb(204, 135, 31);
-    font-size: 30px;
-    position: fixed;
+.lyricsdivclose,.fullLyrics {
+    background: linear-gradient(to right, rgba(49, 235, 49, 0.206) 0%,  rgb(26, 26, 26) 40%,#1a1a1a 60%, rgba(143, 86, 235, 0.315) 100%);
+    font-size: 25px;
     border-radius: 10px;
-    width: 90px;
+    width: 40vw;
+    height: 40px;
+    margin: 10px auto;
+    position: relative;
+    top: 100px;
+    display: none;
+    justify-content: center;
+    align-items: center;
 }
+
 .lyricsheader {
     border-radius: 5px;
     border-bottom: 4px green solid;
@@ -463,16 +470,44 @@ input.spotyphy-login {
     height: 40px;
     background: rgba(255, 255, 255, 0.795);
 }
-
+.headingInLyrics {
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(248, 8, 8);
+    text-align: center;
+    margin-top: 5px;
+}
+.divExtraBali{
+    width: 100%;
+    height: 200px;
+    position: relative;
+top: 100px;
+   
+}
+.cont-menu {
+    background: rgba(58, 29, 224, 0.096);
+border-radius: 8px;
+    position: fixed;
+    bottom: 3px;
+    z-index: 10;
+    backdrop-filter: blur(8px);
+    height: 70px;
+    width: 100vw;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
 
 .c-menu {
     width: 85%;
-    height: 75%;
+    height: 40px;
     background: linear-gradient(to right, #1a1a1a 0%, #2d2d2d 50%, #1a1a1a 100%);
     top: 1px;
     border-radius: 20px;
-    border: 1px white solid;
-    box-shadow: rgb(71, 153, 5) 4px 5px 7px;
+    border: 0.0001px white solid;
+    box-shadow: rgb(71, 153, 5) 3px 4px 5px;
 }
 
 
